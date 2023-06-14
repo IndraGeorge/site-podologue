@@ -1,31 +1,27 @@
 import Box from '@mui/material/Box';
-import { NavLink } from '../components/NavLink'
+import { Link } from '../components/Link'
 
 export function Nav() {
 
-    const currentPath = window.location.pathname
-    console.log(currentPath);
-
     return (
-        <Box sx={{ width: "100%", height: "50px", backgroundColor: "#1A6AB1" }}>
-            <nav>
+        <Box sx={{ width: "100%", backgroundColor: "#1A6AB1" }}>
+            <nav style={{ padding: "10px", display: "flex", }} >
                 <ul style={{
-                    padding: "25px",
                     display: "flex",
-                    justifyContent: "flex-end",
+                    textAlign: "right",
                     marginRight: "20px"
                 }}>
-                    <li style={{ listStyleType: "none" }}>
-                        <NavLink href="/#presentation" currentPath={currentPath}>Présentation</NavLink>
+                    <li style={{ listStyleType: "none", margin: "0" }}>
+                        <Link href="/presentation">Présentation</Link>
                     </li>
-                    <li style={{ listStyleType: "none" }} >
-                        <NavLink href="/#expertises" currentPath={currentPath}>Expertises</NavLink >
+                    <li style={{ listStyleType: "none", margin: "0" }} >
+                        <Link href="/expertises">Expertises</Link >
                     </li>
-                    <li style={{ listStyleType: "none" }} >
-                        <NavLink href="/#horaires" currentPath={currentPath}>Horaires</NavLink>
+                    <li style={{ listStyleType: "none", margin: "0" }} >
+                        <Link href="/horaires">Horaires</Link>
                     </li>
-                    <li style={{ listStyleType: "none" }} >
-                        <NavLink href="/#contacts" currentPath={currentPath} >Contacts</NavLink>
+                    <li style={{ listStyleType: "none", margin: "0" }} >
+                        <Link href="/contacts">Contacts</Link>
                     </li>
                 </ul>
             </nav>
