@@ -11,8 +11,8 @@ export function Nav() {
                     textAlign: "right",
                     marginRight: "20px"
                 }}>
-                    <li style={{ listStyleType: "none", margin: "0" }}>
-                        <Link href="/presentation">Présentation</Link>
+                    <li style={{ listStyleType: "none", margin: "0" }} >
+                        <Link href="/presentation">Présentation</Link >
                     </li>
                     <li style={{ listStyleType: "none", margin: "0" }} >
                         <Link href="/expertises">Expertises</Link >

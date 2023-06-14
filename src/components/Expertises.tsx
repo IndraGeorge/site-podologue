@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box"
+import Grid from "@mui/material/Grid"
 import pedicure from "../assets/pedicure.svg"
 import semelles from "../assets/semelles.svg"
 import picture1 from "../assets/piedmalade.png"
@@ -9,11 +10,24 @@ import data from "../data.json"
 export function Expertises() {
     return (
         <Box id="expertises" sx={{
-            marginTop: "80px",
-            marginLeft: "60px",
-            marginRight: "60px"
+            marginTop: "100px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            paddingLeft: "30px",
+            paddingRight: "30px",
+            maxWidth: "1700px"
         }}
         >
+            <h2 style={{
+                textAlign: "center",
+                color: "#1E1E1E",
+                marginBottom: "50px",
+                fontSize: "32px"
+            }}
+            >
+                Expertises
+            </h2>
+
             <Box sx={{ textAlign: "center" }}>
                 <img src={pedicure} alt="pied" style={{ width: "100px", borderRadius: "100%" }} />
 
@@ -60,56 +74,53 @@ export function Expertises() {
                 </p>
             </Box>
 
-            <Box sx={{
-                borderRadius: "5px",
-                backgroundColor: "#EDE6E6",
-                marginTop: "80px",
-                display: "flex",
-                alignItems: "center",
-                padding: "30px"
-            }}
-            >
-                <Box style={{
-                    display: "flex",
-                    alignItems: "center",
+            <Grid container flexDirection="row"
+                style={{
+                    marginTop: "80px",
+                    padding: "20px",
+                    justifyContent: "space-around",
+                    backgroundColor: "#EDE6E6",
+                    borderRadius: "30px",
+                    flexWrap: "wrap",
+                    maxWidth: "1100px"
                 }}
+            >
+                <Grid xs={12} sm={6} md={4} lg={3} flexDirection="column"
+                    style={{ textAlign: "center" }}
                 >
                     <img src={picture1} style={{ borderRadius: "5px", height: "150px" }} alt="ongle traumatisé" />
                     <p style={{
                         fontSize: "17px",
                         textAlign: "justify",
                         padding: "10px",
-                        width: "384px",
+                        maxWidth: "384px",
                         color: "#1E1E1E",
                     }}
                     >
                         {data.map(data => data.avant)}
                     </p>
-                </Box>
+                </Grid>
 
-                <Box
-                    style={{
-                        display: "flex",
-                        alignItems: "center",
-                    }}
+                <Grid xs={12} sm={6} md={4} lg={3} flexDirection="column"
+                    style={{ textAlign: "center" }}
                 >
-                    <Box style={{ display: "flex" }}>
+                    <Grid flexDirection="row">
                         <img src={picture2} style={{ borderRadius: "5px 0 0 5px", height: "150px" }} alt="ongle traumatisé" />
                         <img src={picture3} style={{ borderRadius: "0 5px 5px 0 ", height: "150px" }} alt="Onychoplastie" />
-                    </Box>
+                    </Grid>
 
                     <p style={{
                         color: "#1E1E1E",
                         fontSize: "17px",
                         textAlign: "justify",
                         padding: "10px",
-                        width: "310px",
+                        maxWidth: "311px",
                     }}
                     >
                         {data.map(data => data.après)}
                     </p>
-                </Box>
-            </Box>
+                </Grid>
+            </Grid>
 
             <Box sx={{
                 borderRadius: "5px",
