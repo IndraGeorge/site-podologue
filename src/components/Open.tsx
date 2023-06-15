@@ -1,6 +1,12 @@
-import Box from "@mui/material/Box"
+import { styled } from "@mui/material";
+import { Box, Typography } from "@mui/material"
 
 export function Open() {
+
+    const DaysAndHours = styled(Typography)({
+        marginBottom: "8px"
+    })
+
     return (
         <Box id="horaires" sx={{ marginTop: "100px", backgroundColor: "#EDE6E6", padding: "30px" }}>
             <h2
@@ -14,18 +20,18 @@ export function Open() {
             </h2>
             <Box sx={{ display: "flex", width: "250px" }}>
                 <Box>
-                    <p style={{ marginBottom: "8px" }}>Lundi:</p>
-                    <p style={{ marginBottom: "8px" }}>Mardi:</p>
-                    <p style={{ marginBottom: "8px" }}>Mercredi:</p>
-                    <p style={{ marginBottom: "8px" }}>Jeudi:</p>
-                    <p style={{ marginBottom: "8px" }}>Vendredi:</p>
+                    <DaysAndHours>Lundi:</DaysAndHours>
+                    <DaysAndHours>Mardi:</DaysAndHours>
+                    <DaysAndHours>Mercredi:</DaysAndHours>
+                    <DaysAndHours>Jeudi:</DaysAndHours>
+                    <DaysAndHours>Vendredi:</DaysAndHours>
                 </Box>
                 <Box>
-                    <p style={{ marginBottom: "8px" }}>8h30 - 18h00</p>
-                    <p style={{ marginBottom: "8px" }}>8h30 - 18h00</p>
-                    <p style={{ marginBottom: "8px" }}>8h30 - 18h00</p>
-                    <p style={{ marginBottom: "8px" }}>8h30 - 18h00</p>
-                    <p style={{ marginBottom: "8px" }}>8h30 - 18h00</p>
+                    <DaysAndHours>8h30 - 18h00</DaysAndHours>
+                    <DaysAndHours>8h30 - 18h00</DaysAndHours>
+                    <DaysAndHours>8h30 - 18h00</DaysAndHours>
+                    <DaysAndHours>8h30 - 18h00</DaysAndHours>
+                    <DaysAndHours>8h30 - 18h00</DaysAndHours>
                 </Box>
             </Box>
             <Box sx={{ textAlign: "center", marginTop: "20px" }}>

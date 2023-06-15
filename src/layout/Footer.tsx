@@ -4,16 +4,20 @@ import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 export function Footer() {
 
     return (
-        <Box sx={{
-            height: "150px",
-            backgroundColor: "#031126",
-            marginTop: "100px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between"
-        }}
+        <Box
+            sx={{
+                height: "auto",
+                backgroundColor: "#031126",
+                marginTop: "100px",
+                display: "flex",
+                gap: "15px",
+                alignItems: "center",
+                flexWrap: "wrap",
+                padding: "20px",
+                justifyContent: "space-around"
+            }}
         >
-            <Box sx={{ marginLeft: "40px" }}>
+            <Box>
                 <p style={{ marginBottom: "15px" }} >
                     <a href="#" style={{
                         color: "#fff",
@@ -27,12 +31,12 @@ export function Footer() {
                 <p style={{ color: "#fff", fontSize: "16px" }}>© 2023 Marine Valamba, tous droits réservés</p>
             </Box>
 
-            <Box sx={{ marginRight: "40px" }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Box onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <ArrowUpwardRoundedIcon
                     sx={{
-                        fontSize: "50px",
+                        fontSize: "45px",
                         borderRadius: "5px",
-                        background: "#fff",
+                        background: "#265D97",
                         cursor: "pointer"
                     }}
                 />

@@ -13,11 +13,10 @@ export function Link({ href, children }: ILink) {
                 style={({ isActive }) => ({
                     fontSize: "18px",
                     margin: "20px",
-                    color: "#fff",
                     textDecoration: 'none',
                     padding: "3px",
                     display: "block",
-                    borderBottom: isActive ? "2px solid #fff" : "none"
+                    borderBottom: isActive ? "2px solid #1E1E1E " : "none"
                 })}
             >
                 {children}

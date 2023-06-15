@@ -4,8 +4,8 @@ import { Link } from '../components/Link'
 export function Nav() {
 
     return (
-        <Box sx={{ width: "100%", backgroundColor: "#1A6AB1" }}>
-            <nav style={{ padding: "10px", display: "flex", }} >
+        <Box sx={{ width: "100%" }}>
+            <nav style={{ display: "flex", }} >
                 <ul style={{
                     display: "flex",
                     textAlign: "right",
