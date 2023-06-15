@@ -15,12 +15,11 @@ export function Expertises() {
             marginRight: "auto",
             paddingLeft: "30px",
             paddingRight: "30px",
-            maxWidth: "1700px"
+            maxWidth: "1200px"
         }}
         >
             <h2 style={{
                 textAlign: "center",
-                color: "#1E1E1E",
                 marginBottom: "50px",
                 fontSize: "32px"
             }}
@@ -32,7 +31,6 @@ export function Expertises() {
                 <img src={pedicure} alt="pied" style={{ width: "100px", borderRadius: "100%" }} />
 
                 <p style={{
-                    color: "#1E1E1E",
                     fontSize: "18px",
                     textAlign: "justify",
                     marginTop: "30px"
@@ -46,7 +44,6 @@ export function Expertises() {
                 <img src={semelles} alt="pied" style={{ width: "100px", borderRadius: "100%" }} />
 
                 <p style={{
-                    color: "#1E1E1E",
                     fontSize: "18px",
                     textAlign: "justify",
                     marginTop: "30px"
@@ -79,8 +76,6 @@ export function Expertises() {
                     marginTop: "80px",
                     padding: "20px",
                     justifyContent: "space-around",
-                    backgroundColor: "#EDE6E6",
-                    borderRadius: "30px",
                     flexWrap: "wrap",
                     maxWidth: "1100px"
                 }}
@@ -91,10 +86,7 @@ export function Expertises() {
                     <img src={picture1} style={{ borderRadius: "5px", height: "150px" }} alt="ongle traumatisé" />
                     <p style={{
                         fontSize: "17px",
-                        textAlign: "justify",
-                        padding: "10px",
-                        maxWidth: "384px",
-                        color: "#1E1E1E",
+                        textAlign: "justify"
                     }}
                     >
                         {data.map(data => data.avant)}
@@ -110,11 +102,9 @@ export function Expertises() {
                     </Grid>
 
                     <p style={{
-                        color: "#1E1E1E",
                         fontSize: "17px",
                         textAlign: "justify",
-                        padding: "10px",
-                        maxWidth: "311px",
+
                     }}
                     >
                         {data.map(data => data.après)}
