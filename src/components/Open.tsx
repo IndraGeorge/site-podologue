@@ -1,19 +1,22 @@
 import { styled } from "@mui/material";
 import { Box, Typography } from "@mui/material"
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export function Open() {
+
+    const matches = useMediaQuery('(min-width:480px)')
 
     const DaysAndHours = styled(Typography)({
         marginBottom: "8px"
     })
 
     return (
-        <Box id="horaires" sx={{ marginTop: "100px", backgroundColor: "#EDE6E6", padding: "30px" }}>
+        <Box id="horaires" sx={{ marginTop: "50px", backgroundColor: "#EDE6E6", padding: "30px 0 30px 0" }}>
             <h2
                 style={{
                     textAlign: "center",
                     marginBottom: "25px",
-                    fontSize: "32px"
+                    fontSize: matches ? "32px" : "28px"
                 }}
             >
                 Horaires d'ouvertures

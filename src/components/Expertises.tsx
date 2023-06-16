@@ -7,25 +7,27 @@ import picture2 from "../assets/piedmalade2.png"
 import picture3 from "../assets/piedguerri.png"
 import data from "../data.json"
 import { styled, Typography } from "@mui/material"
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export function Expertises() {
+
+    const matches = useMediaQuery('(min-width:480px)')
 
     const Information = styled(Box)({
         borderRadius: "5px",
         backgroundColor: "#1A6AB1",
         textAlign: "left",
-        marginTop: "50px",
+        marginTop: "60px",
     })
 
     const Paragraphe = styled(Typography)({
-        fontSize: "18px",
         textAlign: "left",
         marginTop: "30px"
     })
 
     return (
         <Box id="expertises" sx={{
-            marginTop: "100px",
+            marginTop: "40px",
             paddingLeft: "20px",
             paddingRight: "20px",
             maxWidth: "1200px"
@@ -34,7 +36,7 @@ export function Expertises() {
             <h2 style={{
                 textAlign: "center",
                 marginBottom: "50px",
-                fontSize: "32px"
+                fontSize: matches ? "32px" : "28px"
             }}
             >
                 Expertises
@@ -49,7 +51,7 @@ export function Expertises() {
                 </Paragraphe>
             </Box>
 
-            <Box sx={{ textAlign: "center", marginTop: "100px" }}>
+            <Box sx={{ textAlign: "center", marginTop: "50px" }}>
                 <img src={semelles} alt="pied" style={{ width: "100px", borderRadius: "100%" }} />
 
                 <Paragraphe
@@ -61,7 +63,6 @@ export function Expertises() {
             <Information >
                 <p style={{
                     color: "#fff",
-                    fontSize: "18px",
                     padding: "20px"
                 }}
                 >
@@ -71,7 +72,7 @@ export function Expertises() {
 
             <Box
                 style={{
-                    marginTop: "80px",
+                    marginTop: "40px",
                     padding: "20px",
                     maxWidth: "1100px"
                 }}
@@ -81,7 +82,6 @@ export function Expertises() {
                 >
                     <img src={picture1} style={{ borderRadius: "5px", height: "150px" }} alt="ongle traumatisé" />
                     <Typography style={{
-                        fontSize: "17px",
                         textAlign: "left",
                         marginTop: "20px",
                     }}
@@ -99,7 +99,6 @@ export function Expertises() {
                     </Grid>
 
                     <Typography style={{
-                        fontSize: "17px",
                         textAlign: "left",
                         marginTop: "20px"
                     }}
@@ -113,7 +112,6 @@ export function Expertises() {
 
                 <p style={{
                     color: "#fff",
-                    fontSize: "18px",
                     padding: "20px"
                 }}
                 >

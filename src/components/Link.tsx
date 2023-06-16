@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 interface ILink {
     href: string
@@ -7,20 +7,22 @@ interface ILink {
 
 export function Link({ href, children }: ILink) {
 
+    const matches = useMediaQuery('(min-width:480px)')
+
     return (
         <>
-            <NavLink to={href}
-                style={({ isActive }) => ({
-                    fontSize: "18px",
-                    margin: "20px",
+            <a className="liens-nav" href={href}
+                style={({
+                    fontSize: matches ? "18px" : "16px",
+                    display: "flex",
                     textDecoration: 'none',
-                    padding: "3px",
-                    display: "block",
-                    borderBottom: isActive ? "2px solid #1E1E1E " : "none"
+                    color: "#fff",
+                    transition: "200ms"
                 })}
+
             >
                 {children}
-            </NavLink >
+            </a>
         </>
     )
 }
