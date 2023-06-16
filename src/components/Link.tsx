@@ -11,13 +11,12 @@ export function Link({ href, children }: ILink) {
 
     return (
         <>
-            <a className="liens-nav" href={href}
+            <a href={href}
                 style={({
                     fontSize: matches ? "18px" : "16px",
                     display: "flex",
                     textDecoration: 'none',
-                    color: "#fff",
-                    transition: "200ms"
+                    color: "#fff"
                 })}
 
             >

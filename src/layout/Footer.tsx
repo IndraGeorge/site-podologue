@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box"
-import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export function Footer() {
@@ -21,7 +21,7 @@ export function Footer() {
         >
             <Box style={{ margin: "10px" }}>
                 <p style={{ marginBottom: "15px" }} >
-                    <a href="#" style={{
+                    <a href="/#mention" style={{
                         color: "#fff",
                         textDecoration: "none",
                         fontSize: "14px",

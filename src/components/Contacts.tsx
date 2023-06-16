@@ -11,8 +11,6 @@ export function Contacts() {
             marginTop: "50px",
             border: "2px solid #EDE6E6",
             padding: "20px 0 20px 0",
-            marginLeft: "auto",
-            marginRight: "auto",
             maxWidth: "1000px",
             borderRadius: "20px 20px 0 20px"
         }}

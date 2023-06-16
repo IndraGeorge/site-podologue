@@ -10,12 +10,12 @@ export function Nav() {
     return (
 
         <Box sx={{ width: "100%" }}>
-            <nav style={{ backgroundColor: "#1A6AB1" }} >
+            <nav style={{ backgroundColor: "#1A6AB1", height: "64px" }} >
 
                 <ul style={{
                     display: "flex",
-                    justifyContent: matches ? "flex-end" : "center",
-                    gap: matches ? "45px" : "23px",
+                    justifyContent: matches ? "flex-end" : "space-around",
+                    gap: matches ? "45px" : "16px",
                     margin: "20px",
                 }}>
                     <li style={{ listStyleType: "none", margin: "0" }} >

@@ -81,13 +81,13 @@ export function Expertises() {
                     style={{ textAlign: "center", marginBottom: "50px" }}
                 >
                     <img src={picture1} style={{ borderRadius: "5px", height: "150px" }} alt="ongle traumatisé" />
-                    <Typography style={{
+                    <p style={{
                         textAlign: "left",
                         marginTop: "20px",
                     }}
                     >
                         {data.map(data => data.avant)}
-                    </Typography>
+                    </p>
                 </Grid>
 
                 <Grid flexDirection="column"
@@ -98,13 +98,13 @@ export function Expertises() {
                         <img src={picture3} style={{ borderRadius: "0 5px 5px 0 ", height: "150px" }} alt="Onychoplastie" />
                     </Grid>
 
-                    <Typography style={{
+                    <p style={{
                         textAlign: "left",
                         marginTop: "20px"
                     }}
                     >
                         {data.map(data => data.après)}
-                    </Typography>
+                    </p>
                 </Grid>
             </Box>
 

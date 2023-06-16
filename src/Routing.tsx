@@ -7,6 +7,7 @@ import { Open } from "./components/Open"
 import { Contacts } from "./components/Contacts"
 import { Footer } from "./layout/Footer"
 
+
 export function Routing() {
     return (
         <BrowserRouter>
