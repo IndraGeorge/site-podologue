@@ -1,10 +1,17 @@
 import Box from "@mui/material/Box"
 import data from "../data.json"
 import useMediaQuery from '@mui/material/useMediaQuery'
+import { styled, Typography } from "@mui/material"
 
 export function Contacts() {
 
     const matches = useMediaQuery('(min-width:480px)')
+
+    const Paragraphe = styled(Typography)({
+        textAlign: "center",
+        marginBottom: "15px",
+        fontFamily: "Montserrat"
+    })
 
     return (
         <Box id="contacts" sx={{
@@ -22,19 +29,19 @@ export function Contacts() {
             }} >
                 Contacts
             </h2>
-            <p style={{ textAlign: "center", marginBottom: "15px" }}>
+            <Paragraphe>
                 <b>Rendez-vous en ligne:</b> <a href="https://www.docrendezvous.fr/podologue/remire-montjoly/valamba-marine"
                     target="_blank"
                 >
                     {data.map(data => data.booking)}
                 </a>
-            </p>
-            <p style={{ textAlign: "center", marginBottom: "15px" }}>
+            </Paragraphe>
+            <Paragraphe>
                 <b>Téléphone :</b> {data.map(data => data.phone)}
-            </p>
-            <p style={{ textAlign: "center", marginBottom: "15px" }}>
+            </Paragraphe>
+            <Paragraphe>
                 <b>Paiements :</b> {data.map(data => data.payments)}
-            </p>
+            </Paragraphe>
 
         </Box>
     )

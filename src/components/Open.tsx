@@ -7,7 +7,8 @@ export function Open() {
     const matches = useMediaQuery('(min-width:480px)')
 
     const DaysAndHours = styled(Typography)({
-        marginBottom: "8px"
+        marginBottom: "8px",
+        fontFamily: "Montserrat"
     })
 
     return (

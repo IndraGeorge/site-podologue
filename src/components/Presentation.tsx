@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box"
 import data from "../data.json"
+import { Typography } from '@mui/material'
 
 export function Presentation() {
     return (
@@ -11,12 +12,12 @@ export function Presentation() {
                 bottom: "30px"
             }}
         >
-            <p style={{
+            <Typography sx={{
                 color: "#fff",
                 padding: "30px",
             }}>
                 {data.map(data => data.description)}
-            </p>
+            </Typography>
         </Box>
     )
 }

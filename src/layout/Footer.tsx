@@ -1,39 +1,40 @@
 import Box from "@mui/material/Box"
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom'
 
 export function Footer() {
 
     const matches = useMediaQuery('(min-width:480px)')
 
     return (
-        <Box
+        <Stack direction="row"
+            alignItems="center"
+            flexWrap="wrap"
+            height="auto"
+            padding="20px"
+            marginTop="70px"
             sx={{
-                height: "auto",
                 backgroundColor: "#031126",
-                marginTop: "70px",
-                display: "flex",
-                alignItems: "center",
-                flexWrap: "wrap",
-                padding: "20px",
                 justifyContent: matches ? "space-between" : "center"
             }}
         >
-            <Box style={{ margin: "10px" }}>
+            <Box sx={{ margin: "10px" }}>
                 <p style={{ marginBottom: "15px" }} >
-                    <a href="/#mention" style={{
+                    <Link to="/mention" style={{
                         color: "#fff",
                         textDecoration: "none",
-                        fontSize: "14px",
+                        fontSize: "14px"
                     }}
                     >
                         Mention légales
-                    </a>
+                    </Link>
                 </p>
                 <p style={{ color: "#fff", fontSize: "14px" }}>© 2023 Marine Valamba, tous droits réservés</p>
             </Box>
 
-            <Box style={{ margin: "10px" }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Box sx={{ margin: "10px" }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <ArrowUpwardRoundedIcon
                     sx={{
                         fontSize: "40px",
@@ -44,7 +45,7 @@ export function Footer() {
                 />
             </Box>
 
-        </Box>
+        </Stack>
 
     )
 }

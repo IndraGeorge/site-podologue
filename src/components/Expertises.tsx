@@ -1,12 +1,11 @@
 import Box from "@mui/material/Box"
-import Grid from "@mui/material/Grid"
 import pedicure from "../assets/pedicure.svg"
 import semelles from "../assets/semelles.svg"
 import picture1 from "../assets/piedmalade.png"
 import picture2 from "../assets/piedmalade2.png"
 import picture3 from "../assets/piedguerri.png"
 import data from "../data.json"
-import { styled, Typography } from "@mui/material"
+import { styled, Typography, Stack } from "@mui/material"
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export function Expertises() {
@@ -22,7 +21,8 @@ export function Expertises() {
 
     const Paragraphe = styled(Typography)({
         textAlign: "left",
-        marginTop: "30px"
+        marginTop: "30px",
+        fontFamily: "Montserrat"
     })
 
     return (
@@ -71,14 +71,13 @@ export function Expertises() {
             </Information>
 
             <Box
-                style={{
+                sx={{
                     marginTop: "40px",
                     padding: "20px",
                     maxWidth: "1100px"
                 }}
             >
-                <Grid flexDirection="column"
-                    style={{ textAlign: "center", marginBottom: "50px" }}
+                <Stack direction="column" textAlign="center" marginBottom="50px"
                 >
                     <img src={picture1} style={{ borderRadius: "5px", height: "150px" }} alt="ongle traumatisé" />
                     <p style={{
@@ -88,15 +87,14 @@ export function Expertises() {
                     >
                         {data.map(data => data.avant)}
                     </p>
-                </Grid>
+                </Stack>
 
-                <Grid flexDirection="column"
-                    style={{ textAlign: "center", maxWidth: "100%" }}
+                <Stack direction="column" textAlign="center"
                 >
-                    <Grid flexDirection="row">
+                    <Stack direction="row">
                         <img src={picture2} style={{ borderRadius: "5px 0 0 5px", height: "150px" }} alt="ongle traumatisé" />
                         <img src={picture3} style={{ borderRadius: "0 5px 5px 0 ", height: "150px" }} alt="Onychoplastie" />
-                    </Grid>
+                    </Stack>
 
                     <p style={{
                         textAlign: "left",
@@ -105,7 +103,7 @@ export function Expertises() {
                     >
                         {data.map(data => data.après)}
                     </p>
-                </Grid>
+                </Stack>
             </Box>
 
             <Information>
