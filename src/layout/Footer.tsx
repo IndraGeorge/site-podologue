@@ -39,7 +39,7 @@ export function Footer() {
                     sx={{
                         fontSize: "40px",
                         borderRadius: "5px",
-                        background: "#05285B",
+                        background: "#0c3f6d",
                         cursor: "pointer"
                     }}
                 />
