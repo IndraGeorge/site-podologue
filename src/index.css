@@ -10,6 +10,14 @@
      font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+     font-size:40px;
+}
+
+h2{
+     font-size:28px;
+}
+
 nav ul li a:hover{
     border-bottom: 2px solid #fff;
 }
@@ -18,4 +26,14 @@ nav ul li a:hover{
      *{
           font-size:18px;
      }
+
+     h1{
+          font-size:54px;
+     }
+
+     h2{
+          font-size:32px;
+     }
+
 }
+

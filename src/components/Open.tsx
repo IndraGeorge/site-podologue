@@ -1,10 +1,7 @@
 import { styled } from "@mui/material";
 import { Box, Typography } from "@mui/material"
-import useMediaQuery from '@mui/material/useMediaQuery'
 
 export function Open() {
-
-    const matches = useMediaQuery('(min-width:480px)')
 
     const DaysAndHours = styled(Typography)({
         marginBottom: "8px",
@@ -16,8 +13,7 @@ export function Open() {
             <h2
                 style={{
                     textAlign: "center",
-                    marginBottom: "25px",
-                    fontSize: matches ? "32px" : "28px"
+                    marginBottom: "25px"
                 }}
             >
                 Horaires d'ouvertures

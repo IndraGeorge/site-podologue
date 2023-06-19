@@ -1,9 +1,6 @@
-import Box from '@mui/material/Box'
-import useMediaQuery from '@mui/material/useMediaQuery'
+import Box from "@mui/material/Box"
 
 export function LegalMentions() {
-
-    const matches = useMediaQuery('(min-width:480px)')
 
     return (
         <Box sx={{
@@ -13,7 +10,7 @@ export function LegalMentions() {
             maxWidth: "1200px"
         }}>
             <Box sx={{ marginTop: "50px" }}>
-                <h2 style={{ marginBottom: "40px", fontSize: matches ? "32px" : "28px" }}>
+                <h2 style={{ marginBottom: "40px" }}>
                     Raison sociale et siège social
                 </h2>
                 <p><b>MADAME MARINE VALAMBA</b></p><br />
@@ -24,7 +21,7 @@ export function LegalMentions() {
                 <p><b>Activité :</b> Activités des professionnels de la rééducation, de l'appareillage et des pédicures-podologues (8690E)</p>
             </Box>
             <Box sx={{ marginTop: "50px" }} >
-                <h2 style={{ marginBottom: "40px", fontSize: matches ? "32px" : "28px" }} >
+                <h2 style={{ marginBottom: "40px" }} >
                     Hébergeur du site
                 </h2>
                 <p><b>FIREBASE</b></p><br />

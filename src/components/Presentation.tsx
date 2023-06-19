@@ -3,6 +3,9 @@ import data from "../data.json"
 import { Typography } from '@mui/material'
 
 export function Presentation() {
+
+    const presentation = data.map(data => data.description)
+
     return (
         <Box id="presentation"
             sx={{
@@ -16,7 +19,7 @@ export function Presentation() {
                 color: "#fff",
                 padding: "30px",
             }}>
-                {data.map(data => data.description)}
+                {presentation}
             </Typography>
         </Box>
     )

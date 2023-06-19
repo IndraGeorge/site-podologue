@@ -1,12 +1,12 @@
 import Box from "@mui/material/Box"
-import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import Stack from '@mui/material/Stack';
-import { Link } from 'react-router-dom'
+import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded"
+import useMediaQuery from "@mui/material/useMediaQuery"
+import Stack from "@mui/material/Stack"
+import { Link } from "react-router-dom"
 
 export function Footer() {
 
-    const matches = useMediaQuery('(min-width:480px)')
+    const matches = useMediaQuery("(min-width:480px)")
 
     return (
         <Stack direction="row"

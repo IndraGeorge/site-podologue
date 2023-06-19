@@ -1,10 +1,10 @@
-import Box from '@mui/material/Box';
-import { Link } from '../components/Link'
-import useMediaQuery from '@mui/material/useMediaQuery'
+import Box from "@mui/material/Box"
+import { Link } from "../components/Link"
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 export function Nav() {
 
-    const matches = useMediaQuery('(min-width:480px)')
+    const matches = useMediaQuery("(min-width:480px)")
 
     return (
 

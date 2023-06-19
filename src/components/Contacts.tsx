@@ -1,11 +1,7 @@
 import Box from "@mui/material/Box"
-import data from "../data.json"
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { styled, Typography } from "@mui/material"
 
 export function Contacts() {
-
-    const matches = useMediaQuery('(min-width:480px)')
 
     const Paragraphe = styled(Typography)({
         textAlign: "center",
@@ -24,8 +20,7 @@ export function Contacts() {
         >
             <h2 style={{
                 textAlign: "center",
-                marginBottom: "30px",
-                fontSize: matches ? "32px" : "28px"
+                marginBottom: "30px"
             }} >
                 Contacts
             </h2>
@@ -33,14 +28,14 @@ export function Contacts() {
                 <b>Rendez-vous en ligne:</b> <a href="https://www.docrendezvous.fr/podologue/remire-montjoly/valamba-marine"
                     target="_blank"
                 >
-                    {data.map(data => data.booking)}
+                    https://www.docrendezvous.fr/podologue/remire-montjoly/valamba-marine
                 </a>
             </Paragraphe>
             <Paragraphe>
-                <b>Téléphone :</b> {data.map(data => data.phone)}
+                <b>Téléphone :</b> + 33 767 149 163
             </Paragraphe>
             <Paragraphe>
-                <b>Paiements :</b> {data.map(data => data.payments)}
+                <b>Paiements :</b> espèces / carte bleue
             </Paragraphe>
 
         </Box>
