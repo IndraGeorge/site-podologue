@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box"
 import data from "../data.json"
-import { Typography } from '@mui/material'
+import {Typography} from "@mui/material"
 
 export function Presentation() {
 
@@ -15,9 +15,10 @@ export function Presentation() {
                 bottom: "30px"
             }}
         >
-            <Typography sx={{
+            <Typography style={{
                 color: "#fff",
                 padding: "30px",
+                fontFamily:"Montserrat"
             }}>
                 {presentation}
             </Typography>
