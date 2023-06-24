@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box"
+import {Box, Typography} from "@mui/material"
 
 export function LegalMentions() {
 
@@ -21,9 +21,9 @@ export function LegalMentions() {
                 <p><b>Activité :</b> Activités des professionnels de la rééducation, de l'appareillage et des pédicures-podologues (8690E)</p>
             </Box>
             <Box sx={{ marginTop: "50px" }} >
-                <h2 style={{ marginBottom: "40px" }} >
+                <Typography variant="h2" sx={{ marginBottom: "40px" }} >
                     Hébergeur du site
-                </h2>
+                </Typography>
                 <p><b>FIREBASE</b></p><br />
                 <p><b>Raison sociale:</b> Alphabet Inc. Google</p>
                 <p><b>Adresse:</b> 1600 Amphitheatre Parkway CA 94043 Mountain View, California</p>

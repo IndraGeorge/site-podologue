@@ -6,9 +6,7 @@ import Box from "@mui/material/Box";
 import data from "../data.json";
 
 export function Example() {
-  const avant = data.map((data) => data.avant);
-  const après = data.map((data) => data.après);
-
+ 
   const styleParagraphe = {
     textAlign: "left",
     marginTop: "20px"
@@ -29,7 +27,13 @@ export function Example() {
           style={{ borderRadius: "5px", height: "150px", width: "112px" }}
           alt="ongle traumatisé"
         />
-        <Typography sx={styleParagraphe}>{avant}</Typography>
+        {
+          data.map((data,index)=>(
+             <Typography key={`${data.avant}-${index}`} sx={styleParagraphe}>
+              {data.avant}
+             </Typography>
+          ))
+        }
       </Stack>
 
       <Stack direction="column" textAlign="center">
@@ -55,7 +59,13 @@ export function Example() {
             alt="Onychoplastie"
           />
         </Stack>
-        <Typography sx={styleParagraphe}>{après}</Typography>
+        {
+          data.map((data,index)=>(
+             <Typography key={`${data.après}-${index}`} sx={styleParagraphe}>
+              {data.après}
+             </Typography>
+          ))
+        }
       </Stack>
     </Box>
   );

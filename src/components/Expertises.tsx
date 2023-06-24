@@ -6,11 +6,6 @@ import data from "../data.json";
 import { Example } from "./Example";
 
 export function Expertises() {
-  const pedicureDescription = data.map((data) => data.desciptionPedicure);
-  const descriptionSemelle = data.map((data) => data.descriptionSemelle);
-  const orthonyxies = data.map((data) => data.orthonyxies);
-  const orthoplastie = data.map((data) => data.orthoplastie);
-
   const styleParagraphe = {
     textAlign: "left",
     marginTop: "30px",
@@ -33,14 +28,15 @@ export function Expertises() {
         maxWidth: "1200px",
       }}
     >
-      <h2
-        style={{
+      <Typography
+        variant="h2"
+        sx={{
           textAlign: "center",
           marginBottom: "50px",
         }}
       >
         Expertises
-      </h2>
+      </Typography>
 
       <Box sx={{ textAlign: "center" }}>
         <img
@@ -49,8 +45,14 @@ export function Expertises() {
           alt="pied"
           style={{ width: "100px", height: "100px", borderRadius: "100%" }}
         />
-
-        <Typography sx={styleParagraphe}>{pedicureDescription}</Typography>
+        {data.map((data, index) => (
+          <Typography
+            key={`${data.descriptionPedicure}-${index}`}
+            sx={styleParagraphe}
+          >
+            {data.descriptionPedicure}
+          </Typography>
+        ))}
       </Box>
 
       <Box sx={{ textAlign: "center", marginTop: "50px" }}>
@@ -60,32 +62,38 @@ export function Expertises() {
           alt="pied"
           style={{ width: "100px", height: "100px", borderRadius: "100%" }}
         />
-
-        <Typography sx={styleParagraphe}>{descriptionSemelle}</Typography>
+        {data.map((data, index) => (
+          <Typography
+            key={`${data.descriptionSemelles}-${index}`}
+            sx={styleParagraphe}
+          >
+            {data.descriptionSemelles}
+          </Typography>
+        ))}
       </Box>
 
       <Box sx={styleInfo}>
-        <p
-          style={{
-            color: "#fff",
-            padding: "20px",
-          }}
-        >
-          {orthonyxies}
-        </p>
+        {data.map((data, index) => (
+          <Typography
+            key={`${data.orthonyxies}-${index}`}
+            sx={{ color: "#fff", padding: "20px" }}
+          >
+            {data.orthonyxies}
+          </Typography>
+        ))}
       </Box>
 
       <Example />
 
       <Box sx={styleInfo}>
-        <p
-          style={{
-            color: "#fff",
-            padding: "20px",
-          }}
-        >
-          {orthoplastie}
-        </p>
+        {data.map((data, index) => (
+          <Typography
+            key={`${data.orthoplastie}-${index}`}
+            sx={{ color: "#fff", padding: "20px" }}
+          >
+            {data.orthoplastie}
+          </Typography>
+        ))}
       </Box>
     </Box>
   );

@@ -5,6 +5,11 @@ import useMediaQuery from "@mui/material/useMediaQuery"
 export function Nav() {
 
     const matches = useMediaQuery("(min-width:480px)")
+    
+    const styleLink = {
+        listStyleType: "none", 
+        margin: "0"
+    }
 
     return (
 
@@ -17,13 +22,13 @@ export function Nav() {
                     gap: matches ? "45px" : "16px",
                     margin: "20px",
                 }}>
-                    <li style={{ listStyleType: "none", margin: "0" }} >
+                    <li style={styleLink} >
                         <Link href="/#expertises">Expertises</Link >
                     </li>
-                    <li style={{ listStyleType: "none", margin: "0" }} >
+                    <li style={styleLink} >
                         <Link href="/#horaires">Horaires</Link>
                     </li>
-                    <li style={{ listStyleType: "none", margin: "0" }} >
+                    <li style={styleLink} >
                         <Link href="/#contacts">Contacts</Link>
                     </li>
                 </ul>

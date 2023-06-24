@@ -7,6 +7,7 @@ export function Banner() {
       direction="row"
       alignItems="center"
       height="400px"
+      width="100%"
       sx={{
         background: `url(${image}) center / cover no-repeat`,
         position: "relative",

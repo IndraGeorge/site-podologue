@@ -10,19 +10,20 @@ export function Open() {
     <Box
       id="horaires"
       sx={{
-        marginTop: "50px",
+        marginTop: "60px",
         backgroundColor: "#EDE6E6",
         padding: "30px 0 30px 0",
       }}
     >
-      <h2
-        style={{
+      <Typography
+        variant="h2"
+        sx={{
           textAlign: "center",
           marginBottom: "25px",
         }}
       >
         Horaires d'ouvertures
-      </h2>
+      </Typography>
       <Box sx={{ display: "flex", width: "250px" }}>
         <Box>
           <DaysAndHours>Lundi:</DaysAndHours>
