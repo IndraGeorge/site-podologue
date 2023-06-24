@@ -15,7 +15,7 @@ export function Expertises() {
     borderRadius: "5px",
     backgroundColor: "#1A6AB1",
     textAlign: "left",
-    marginTop: "60px",
+    marginTop: "50px",
   };
 
   return (
