@@ -9,8 +9,9 @@ export function Banner() {
       height="400px"
       width="100%"
       sx={{
-        background: `url(${image}) center / cover no-repeat`,
+        background: `url(${image}) bottom / cover no-repeat`,
         position: "relative",
+        backgroundAttachment: "fixed",
       }}
     >
       <h1 style={{ color: "#fff", textAlign: "center" }}>
