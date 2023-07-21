@@ -9,12 +9,28 @@ export function Banner() {
       height="400px"
       width="100%"
       sx={{
-        background: `url(${image}) bottom / cover no-repeat`,
+        overflow: "hidden",
         position: "relative",
-        backgroundAttachment: "fixed",
       }}
     >
-      <h1 style={{ color: "#fff", textAlign: "center" }}>
+      <div
+        style={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          zIndex: -1,
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "scroll",
+        }}
+      />
+      <h1
+        style={{
+          color: "#fff",
+          textAlign: "center",
+        }}
+      >
         Cabinet Pédicure Podologue
       </h1>
     </Stack>
