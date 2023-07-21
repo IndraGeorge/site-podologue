@@ -1,5 +1,5 @@
 import Stack from "@mui/material/Stack";
-import image from "../assets/image.svg";
+import image from "../assets/image.jpg";
 
 export function Banner() {
   return (
