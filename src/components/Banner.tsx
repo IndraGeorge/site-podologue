@@ -1,7 +1,11 @@
 import Stack from "@mui/material/Stack";
 import image from "../assets/image.jpg";
+import imageM from "../assets/image_m.jpg";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export function Banner() {
+  const matches = useMediaQuery("(min-width:480px)");
+
   return (
     <Stack
       direction="row"
@@ -19,10 +23,11 @@ export function Banner() {
           height: "100%",
           width: "100%",
           zIndex: -1,
-          backgroundImage: `url(${image})`,
+          backgroundImage: matches ? `url(${image})` : `url(${imageM})`,
+          backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          objectFit: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "scroll",
         }}
       />
       <h1
