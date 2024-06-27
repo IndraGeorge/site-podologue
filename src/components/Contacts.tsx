@@ -38,7 +38,7 @@ export function Contacts() {
       </Typography>
       <Typography sx={paragrapheStyle}>
         {" "}
-        <b>Téléphone :</b> 05 94 39 69 83{" "}
+        <b>Téléphone :</b> 05 94 39 69 83 {" "}
       </Typography>
       <Typography sx={paragrapheStyle}>
         <b>Paiements :</b> espèces / carte bleue
